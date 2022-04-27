@@ -7,6 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB173C722819FD7F0060C4C1 /* play_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB173C712819FD7F0060C4C1 /* play_button.atlas */; };
+		FB173C742819FF930060C4C1 /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB173C732819FF930060C4C1 /* PauseScene.swift */; };
+		FB55434E2819F51D0061873F /* good_job.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB55434D2819F51D0061873F /* good_job.atlas */; };
+		FB5543562819F6B60061873F /* bubble_burst.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB5543552819F6B60061873F /* bubble_burst.atlas */; };
+		FB5543582819F6C40061873F /* difficulty_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB5543572819F6C40061873F /* difficulty_button.atlas */; };
+		FB55435A2819F6CD0061873F /* game_paused.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB5543592819F6CD0061873F /* game_paused.atlas */; };
+		FB55435E2819F6DF0061873F /* mainmenu_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB55435D2819F6DF0061873F /* mainmenu_button.atlas */; };
+		FB5543602819F6EA0061873F /* pause_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB55435F2819F6EA0061873F /* pause_button.atlas */; };
+		FB5543642819F7200061873F /* yunasballad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543632819F7200061873F /* yunasballad.mp3 */; };
+		FB5543662819F7290061873F /* words.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543652819F7290061873F /* words.mp3 */; };
+		FB5543682819F7370061873F /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543672819F7370061873F /* gameover.mp3 */; };
+		FB55436A2819F73F0061873F /* EternityMemoryofLightwaves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543692819F73F0061873F /* EternityMemoryofLightwaves.mp3 */; };
+		FB55436C2819F74B0061873F /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB55436B2819F74B0061873F /* explosion.mp3 */; };
+		FB55436E2819F7540061873F /* bubblepop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB55436D2819F7540061873F /* bubblepop.mp3 */; };
+		FB5543702819F7960061873F /* CongratsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB55436F2819F7960061873F /* CongratsScene.sks */; };
+		FB5543722819F7CC0061873F /* KidsModeScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB5543712819F7CC0061873F /* KidsModeScene.sks */; };
+		FB5543742819F7FD0061873F /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB5543732819F7FD0061873F /* MenuScene.sks */; };
+		FB5543762819F85E0061873F /* PauseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB5543752819F85E0061873F /* PauseScene.sks */; };
+		FB5543782819F88C0061873F /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB5543772819F88C0061873F /* StartScene.sks */; };
+		FB55437A2819F93A0061873F /* BubbleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543792819F93A0061873F /* BubbleAnimation.swift */; };
+		FB55437C2819F9750061873F /* CongratsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55437B2819F9750061873F /* CongratsScene.swift */; };
+		FB55437E2819F9B20061873F /* DifficultyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55437D2819F9B20061873F /* DifficultyButton.swift */; };
+		FB5543802819F9DC0061873F /* GamePausedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55437F2819F9DC0061873F /* GamePausedImage.swift */; };
+		FB5543822819FA4F0061873F /* GoodJobImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543812819FA4F0061873F /* GoodJobImage.swift */; };
+		FB5543842819FA7E0061873F /* KidsModeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543832819FA7E0061873F /* KidsModeScene.swift */; };
+		FB5543862819FAB20061873F /* MainMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543852819FAB20061873F /* MainMenuButton.swift */; };
+		FB5543882819FADC0061873F /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543872819FADC0061873F /* MenuScene.swift */; };
+		FB55438A2819FB0C0061873F /* PauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543892819FB0C0061873F /* PauseButton.swift */; };
+		FB55438C2819FB300061873F /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55438B2819FB300061873F /* PlayButton.swift */; };
+		FB5543902819FB830061873F /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55438F2819FB830061873F /* ReplayButton.swift */; };
+		FB5543922819FBA20061873F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543912819FBA20061873F /* StartScene.swift */; };
 		FBD057972819F3E100BC508A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD057962819F3E100BC508A /* AppDelegate.swift */; };
 		FBD057992819F3E100BC508A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBD057982819F3E100BC508A /* GameScene.sks */; };
 		FBD0579B2819F3E100BC508A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBD0579A2819F3E100BC508A /* Actions.sks */; };
@@ -18,6 +49,7 @@
 		FBD057B12819F3E300BC508A /* Bubble_BurstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD057B02819F3E300BC508A /* Bubble_BurstTests.swift */; };
 		FBD057BB2819F3E300BC508A /* Bubble_BurstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD057BA2819F3E300BC508A /* Bubble_BurstUITests.swift */; };
 		FBD057BD2819F3E300BC508A /* Bubble_BurstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD057BC2819F3E300BC508A /* Bubble_BurstUITestsLaunchTests.swift */; };
+		FBD391BB281A01D30031E5A5 /* replay_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FBD391BA281A01D30031E5A5 /* replay_button.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +70,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB173C712819FD7F0060C4C1 /* play_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = play_button.atlas; sourceTree = "<group>"; };
+		FB173C732819FF930060C4C1 /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
+		FB55434D2819F51D0061873F /* good_job.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = good_job.atlas; sourceTree = "<group>"; };
+		FB5543552819F6B60061873F /* bubble_burst.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bubble_burst.atlas; sourceTree = "<group>"; };
+		FB5543572819F6C40061873F /* difficulty_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = difficulty_button.atlas; sourceTree = "<group>"; };
+		FB5543592819F6CD0061873F /* game_paused.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = game_paused.atlas; sourceTree = "<group>"; };
+		FB55435D2819F6DF0061873F /* mainmenu_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = mainmenu_button.atlas; sourceTree = "<group>"; };
+		FB55435F2819F6EA0061873F /* pause_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pause_button.atlas; sourceTree = "<group>"; };
+		FB5543632819F7200061873F /* yunasballad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yunasballad.mp3; sourceTree = "<group>"; };
+		FB5543652819F7290061873F /* words.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = words.mp3; sourceTree = "<group>"; };
+		FB5543672819F7370061873F /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		FB5543692819F73F0061873F /* EternityMemoryofLightwaves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EternityMemoryofLightwaves.mp3; sourceTree = "<group>"; };
+		FB55436B2819F74B0061873F /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		FB55436D2819F7540061873F /* bubblepop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bubblepop.mp3; sourceTree = "<group>"; };
+		FB55436F2819F7960061873F /* CongratsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CongratsScene.sks; sourceTree = "<group>"; };
+		FB5543712819F7CC0061873F /* KidsModeScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = KidsModeScene.sks; sourceTree = "<group>"; };
+		FB5543732819F7FD0061873F /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		FB5543752819F85E0061873F /* PauseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PauseScene.sks; sourceTree = "<group>"; };
+		FB5543772819F88C0061873F /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		FB5543792819F93A0061873F /* BubbleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleAnimation.swift; sourceTree = "<group>"; };
+		FB55437B2819F9750061873F /* CongratsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsScene.swift; sourceTree = "<group>"; };
+		FB55437D2819F9B20061873F /* DifficultyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyButton.swift; sourceTree = "<group>"; };
+		FB55437F2819F9DC0061873F /* GamePausedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePausedImage.swift; sourceTree = "<group>"; };
+		FB5543812819FA4F0061873F /* GoodJobImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodJobImage.swift; sourceTree = "<group>"; };
+		FB5543832819FA7E0061873F /* KidsModeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsModeScene.swift; sourceTree = "<group>"; };
+		FB5543852819FAB20061873F /* MainMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuButton.swift; sourceTree = "<group>"; };
+		FB5543872819FADC0061873F /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		FB5543892819FB0C0061873F /* PauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseButton.swift; sourceTree = "<group>"; };
+		FB55438B2819FB300061873F /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		FB55438F2819FB830061873F /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
+		FB5543912819FBA20061873F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		FBD057932819F3E100BC508A /* Bubble Burst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bubble Burst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD057962819F3E100BC508A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD057982819F3E100BC508A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -52,6 +115,7 @@
 		FBD057B62819F3E300BC508A /* Bubble BurstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bubble BurstUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD057BA2819F3E300BC508A /* Bubble_BurstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble_BurstUITests.swift; sourceTree = "<group>"; };
 		FBD057BC2819F3E300BC508A /* Bubble_BurstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble_BurstUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBD391BA281A01D30031E5A5 /* replay_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = replay_button.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +166,46 @@
 		FBD057952819F3E100BC508A /* Bubble Burst */ = {
 			isa = PBXGroup;
 			children = (
+				FB173C712819FD7F0060C4C1 /* play_button.atlas */,
+				FB5543632819F7200061873F /* yunasballad.mp3 */,
+				FB5543672819F7370061873F /* gameover.mp3 */,
+				FB5543692819F73F0061873F /* EternityMemoryofLightwaves.mp3 */,
+				FB5543652819F7290061873F /* words.mp3 */,
+				FB55436D2819F7540061873F /* bubblepop.mp3 */,
+				FB55436B2819F74B0061873F /* explosion.mp3 */,
+				FBD391BA281A01D30031E5A5 /* replay_button.atlas */,
+				FB5543552819F6B60061873F /* bubble_burst.atlas */,
+				FB55434D2819F51D0061873F /* good_job.atlas */,
 				FBD057962819F3E100BC508A /* AppDelegate.swift */,
 				FBD057982819F3E100BC508A /* GameScene.sks */,
+				FB5543572819F6C40061873F /* difficulty_button.atlas */,
 				FBD0579A2819F3E100BC508A /* Actions.sks */,
 				FBD0579C2819F3E100BC508A /* GameScene.swift */,
+				FB55435F2819F6EA0061873F /* pause_button.atlas */,
+				FB5543592819F6CD0061873F /* game_paused.atlas */,
 				FBD0579E2819F3E100BC508A /* GameViewController.swift */,
 				FBD057A02819F3E100BC508A /* Main.storyboard */,
+				FB55435D2819F6DF0061873F /* mainmenu_button.atlas */,
 				FBD057A32819F3E200BC508A /* Assets.xcassets */,
 				FBD057A52819F3E200BC508A /* LaunchScreen.storyboard */,
+				FB55436F2819F7960061873F /* CongratsScene.sks */,
+				FB5543712819F7CC0061873F /* KidsModeScene.sks */,
+				FB5543732819F7FD0061873F /* MenuScene.sks */,
+				FB5543752819F85E0061873F /* PauseScene.sks */,
+				FB5543772819F88C0061873F /* StartScene.sks */,
+				FB5543792819F93A0061873F /* BubbleAnimation.swift */,
+				FB55437B2819F9750061873F /* CongratsScene.swift */,
+				FB55437D2819F9B20061873F /* DifficultyButton.swift */,
+				FB55437F2819F9DC0061873F /* GamePausedImage.swift */,
+				FB5543812819FA4F0061873F /* GoodJobImage.swift */,
+				FB5543832819FA7E0061873F /* KidsModeScene.swift */,
+				FB5543852819FAB20061873F /* MainMenuButton.swift */,
+				FB5543872819FADC0061873F /* MenuScene.swift */,
+				FB5543892819FB0C0061873F /* PauseButton.swift */,
+				FB55438B2819FB300061873F /* PlayButton.swift */,
+				FB55438F2819FB830061873F /* ReplayButton.swift */,
+				FB5543912819FBA20061873F /* StartScene.swift */,
+				FB173C732819FF930060C4C1 /* PauseScene.swift */,
 			);
 			path = "Bubble Burst";
 			sourceTree = "<group>";
@@ -235,10 +331,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5543582819F6C40061873F /* difficulty_button.atlas in Resources */,
+				FB5543762819F85E0061873F /* PauseScene.sks in Resources */,
+				FB55435A2819F6CD0061873F /* game_paused.atlas in Resources */,
+				FB5543562819F6B60061873F /* bubble_burst.atlas in Resources */,
+				FB5543602819F6EA0061873F /* pause_button.atlas in Resources */,
 				FBD057A22819F3E100BC508A /* Main.storyboard in Resources */,
 				FBD057992819F3E100BC508A /* GameScene.sks in Resources */,
+				FB5543722819F7CC0061873F /* KidsModeScene.sks in Resources */,
+				FB5543782819F88C0061873F /* StartScene.sks in Resources */,
+				FB5543662819F7290061873F /* words.mp3 in Resources */,
+				FB55436C2819F74B0061873F /* explosion.mp3 in Resources */,
+				FB55434E2819F51D0061873F /* good_job.atlas in Resources */,
+				FB55436A2819F73F0061873F /* EternityMemoryofLightwaves.mp3 in Resources */,
+				FB5543742819F7FD0061873F /* MenuScene.sks in Resources */,
+				FBD391BB281A01D30031E5A5 /* replay_button.atlas in Resources */,
+				FB173C722819FD7F0060C4C1 /* play_button.atlas in Resources */,
 				FBD057A42819F3E200BC508A /* Assets.xcassets in Resources */,
+				FB55436E2819F7540061873F /* bubblepop.mp3 in Resources */,
+				FB55435E2819F6DF0061873F /* mainmenu_button.atlas in Resources */,
+				FB5543682819F7370061873F /* gameover.mp3 in Resources */,
+				FB5543642819F7200061873F /* yunasballad.mp3 in Resources */,
 				FBD057A72819F3E200BC508A /* LaunchScreen.storyboard in Resources */,
+				FB5543702819F7960061873F /* CongratsScene.sks in Resources */,
 				FBD0579B2819F3E100BC508A /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +379,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB55437C2819F9750061873F /* CongratsScene.swift in Sources */,
+				FB5543862819FAB20061873F /* MainMenuButton.swift in Sources */,
+				FB5543882819FADC0061873F /* MenuScene.swift in Sources */,
+				FB55437A2819F93A0061873F /* BubbleAnimation.swift in Sources */,
+				FB5543802819F9DC0061873F /* GamePausedImage.swift in Sources */,
+				FB55437E2819F9B20061873F /* DifficultyButton.swift in Sources */,
+				FB55438C2819FB300061873F /* PlayButton.swift in Sources */,
+				FB173C742819FF930060C4C1 /* PauseScene.swift in Sources */,
+				FB5543922819FBA20061873F /* StartScene.swift in Sources */,
+				FB55438A2819FB0C0061873F /* PauseButton.swift in Sources */,
+				FB5543822819FA4F0061873F /* GoodJobImage.swift in Sources */,
+				FB5543902819FB830061873F /* ReplayButton.swift in Sources */,
+				FB5543842819FA7E0061873F /* KidsModeScene.swift in Sources */,
 				FBD0579D2819F3E100BC508A /* GameScene.swift in Sources */,
 				FBD0579F2819F3E100BC508A /* GameViewController.swift in Sources */,
 				FBD057972819F3E100BC508A /* AppDelegate.swift in Sources */,
