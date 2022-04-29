@@ -105,7 +105,7 @@ class PauseScene: SKScene {
                     let scene = SKScene(fileNamed: "MenuScene") as! MenuScene
                         // Set the scale mode to scale to fit the window
                     scene.newDifficulty = self.newDifficulty
-                    scene.scaleMode = .fill
+                    scene.scaleMode = .aspectFill
                     view?.presentScene(scene, transition: transition)
                 } else if node.name == "replay_button" && newDifficulty == "Kids Mode"{
                     pauseMusic.removeFromParent()
