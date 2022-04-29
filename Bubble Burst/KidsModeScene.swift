@@ -75,7 +75,7 @@ class KidsModeScene: SKScene {
         scoreLabel = SKLabelNode(fontNamed: "ChalkDuster")
         scoreLabel.text = "Score 0"
         scoreLabel.zPosition = 1
-        scoreLabel.position = CGPoint(x: self.frame.midX - 230, y: self.frame.midY + 580)
+        scoreLabel.position = CGPoint(x: self.frame.midX - 240, y: self.frame.midY + 580)
         scoreLabel.fontSize = 30
         scoreLabel.fontColor = SKColor.white
         //scoreLabel.isHidden = true
@@ -85,7 +85,7 @@ class KidsModeScene: SKScene {
         timeLabel = SKLabelNode(fontNamed: "ChalkDuster")
         timeLabel.text = "Time 0"
         timeLabel.zPosition = 1
-        timeLabel.position = CGPoint(x: self.frame.midX - 230, y: self.frame.midY + 620)
+        timeLabel.position = CGPoint(x: self.frame.midX - 240, y: self.frame.midY + 620)
         timeLabel.fontSize = 30
         timeLabel.fontColor = SKColor.white
         self.addChild(timeLabel)
