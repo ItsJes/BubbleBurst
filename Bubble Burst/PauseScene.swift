@@ -105,14 +105,14 @@ class PauseScene: SKScene {
                     let scene = SKScene(fileNamed: "MenuScene") as! MenuScene
                         // Set the scale mode to scale to fit the window
                     scene.newDifficulty = self.newDifficulty
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .fill
                     view?.presentScene(scene, transition: transition)
                 } else if node.name == "replay_button" && newDifficulty == "Kids Mode"{
                     pauseMusic.removeFromParent()
                     let transition = SKTransition.flipVertical(withDuration: 0.5)
                     let scene = SKScene(fileNamed: "KidsModeScene") as! KidsModeScene
                         // Set the scale mode to scale to fit the window
-                    scene.newDifficulty = self.newDifficulty
+                    scene.newDifficulty = "Kids Mode"
                     scene.scaleMode = .fill
                     view?.presentScene(scene, transition: transition)
                 } else if node.name == "replay_button" && newDifficulty == "Normal"{
@@ -120,7 +120,7 @@ class PauseScene: SKScene {
                     let transition = SKTransition.flipVertical(withDuration: 0.5)
                     let scene = SKScene(fileNamed: "GameScene") as! GameScene
                         // Set the scale mode to scale to fit the window
-                    scene.newDifficulty = self.newDifficulty
+                    scene.newDifficulty = "Normal"
                     scene.scaleMode = .fill
                     view?.presentScene(scene, transition: transition)
                 }

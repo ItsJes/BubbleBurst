@@ -122,7 +122,7 @@ class CongratsScene: SKScene {
                     let scene = SKScene(fileNamed: "KidsModeScene") as! KidsModeScene
                         // Set the scale mode to scale to fit the window
                     scene.newDifficulty = self.newDifficulty
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .fill
                     view?.presentScene(scene, transition: transition)
                 } else if node.name == "replay_button" && newDifficulty == "Normal"{
                     congratsMusic.removeFromParent()
@@ -130,7 +130,7 @@ class CongratsScene: SKScene {
                     let scene = SKScene(fileNamed: "GameScene") as! GameScene
                         // Set the scale mode to scale to fit the window
                     scene.newDifficulty = self.newDifficulty
-                    scene.scaleMode = .aspectFill
+                    scene.scaleMode = .fill
                     view?.presentScene(scene, transition: transition)
                 }
             }

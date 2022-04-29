@@ -58,12 +58,12 @@ class StartScene: SKScene {
         self.addChild(label)
         
         playButton.name = "play_button"
-        playButton.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 300)
+        playButton.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 500)
         playButton.size = CGSize(width: 200, height: 200)
         self.addChild(playButton)
         
         difficultyButton.name = "difficulty_button"
-        difficultyButton.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 800)
+        difficultyButton.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 850)
         difficultyButton.size = CGSize(width: 400, height: 75)
         difficultyButton.zPosition = -1
         self.addChild(difficultyButton)
@@ -75,7 +75,7 @@ class StartScene: SKScene {
         difficultyLabel.text = "Difficulty Level"
         difficultyLabel.fontSize = 35
         difficultyLabel.fontColor = SKColor.black
-        difficultyLabel.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 790)
+        difficultyLabel.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 840)
         difficultyLabel.zPosition = 1
         self.addChild(difficultyLabel)
         
@@ -84,7 +84,7 @@ class StartScene: SKScene {
         difficultyMode.text = "Normal"
         difficultyMode.fontSize = 35
         difficultyMode.fontColor = SKColor.cyan
-        difficultyMode.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 600)
+        difficultyMode.position = CGPoint(x: self.frame.midX, y: self.frame.minY + 675)
         difficultyLabel.zPosition = 1
         self.addChild(difficultyMode)
         
