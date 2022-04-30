@@ -31,7 +31,7 @@ class KidsModeScene: SKScene {
         }
     }
     
-    var newTime: Int = 0 {
+    var newTime: Int = 60 {
         didSet {
             timeLabel.text = "Time: \(newTime)"
         }
@@ -65,7 +65,7 @@ class KidsModeScene: SKScene {
     }
     
     @objc func updateTimeLabel(){
-        newTime += 1
+        newTime -= 1
     }
     
     // this function sets the game board and scores
@@ -83,7 +83,7 @@ class KidsModeScene: SKScene {
         
         
         timeLabel = SKLabelNode(fontNamed: "ChalkDuster")
-        timeLabel.text = "Time 0"
+        timeLabel.text = "Time 60"
         timeLabel.zPosition = 1
         timeLabel.position = CGPoint(x: self.frame.midX - 240, y: self.frame.midY + 620)
         timeLabel.fontSize = 35
