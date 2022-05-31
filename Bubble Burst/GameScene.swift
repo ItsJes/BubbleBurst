@@ -136,7 +136,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
     }
     
     func getBombTimer(){
-        let bombTimeInterval = Double.random(in: 1.5..<3.0)
+        let bombTimeInterval = Double.random(in: 0.5..<3.0)
         bombTimer = Timer.scheduledTimer(timeInterval: bombTimeInterval, target: self,selector: #selector(addBombs), userInfo: nil, repeats: true)
     }
     
