@@ -154,14 +154,21 @@
 			path = Levels;
 			sourceTree = "<group>";
 		};
+		FB5D243B28F8A040009F97C0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB55436B2819F74B0061873F /* explosion.mp3 */,
+				FB55436D2819F7540061873F /* bubblepop.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		FB980E8C28F88B14007E27E1 /* Music */ = {
 			isa = PBXGroup;
 			children = (
 				FB5543672819F7370061873F /* gameover.mp3 */,
 				FB5543652819F7290061873F /* words.mp3 */,
 				FB5543692819F73F0061873F /* EternityMemoryofLightwaves.mp3 */,
-				FB55436B2819F74B0061873F /* explosion.mp3 */,
-				FB55436D2819F7540061873F /* bubblepop.mp3 */,
 				FB5543632819F7200061873F /* yunasballad.mp3 */,
 			);
 			path = Music;
@@ -236,6 +243,7 @@
 		FBD057952819F3E100BC508A /* Bubble Burst */ = {
 			isa = PBXGroup;
 			children = (
+				FB5D243B28F8A040009F97C0 /* Sounds */,
 				FB980E9028F88D8D007E27E1 /* Images */,
 				FB980E8F28F88B6D007E27E1 /* Scenes */,
 				FB980E8D28F88B2D007E27E1 /* Atlas */,
