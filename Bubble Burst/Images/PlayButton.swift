@@ -15,13 +15,6 @@ class PlayButton: SKSpriteNode {
         super.init(texture: buttonTexture, color: .clear, size: buttonTexture.size())
     }
     
-    
-    func playButtonImage() {
-        let textureAtlas = SKTextureAtlas(named: "play_button")
-        let frames = ["playbutton"].map { textureAtlas.textureNamed($0) }
-        NSLog("\(frames)")
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

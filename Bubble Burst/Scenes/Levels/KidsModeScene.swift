@@ -37,9 +37,6 @@ class KidsModeScene: SKScene {
         }
     }
     
-
-   // var game: GameManager!
-    
     override func didMove(to view: SKView) {
 
         initializeGameView()
@@ -159,8 +156,7 @@ class KidsModeScene: SKScene {
         
     }
     
-    private func startGame()
-    {
+    private func startGame(){
         scoreLabel.run(SKAction.fadeIn(withDuration: 1.0))
     }
     
@@ -168,23 +164,16 @@ class KidsModeScene: SKScene {
     func touchDown(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
-            n.strokeColor = SKColor.green
+            //n.strokeColor = SKColor.green
             self.addChild(n)
         }
     }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
-    }
+
     
     func touchUp(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
-            n.strokeColor = SKColor.red
+            //n.strokeColor = SKColor.red
             self.addChild(n)
         }
     }
@@ -216,13 +205,7 @@ class KidsModeScene: SKScene {
             }
         }
     }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self))
-        }
-        
-    }
-    
+
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         for t in touches { self.touchUp(atPoint: t.location(in: self))}

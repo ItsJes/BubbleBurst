@@ -14,7 +14,6 @@
 		FB5543582819F6C40061873F /* difficulty_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB5543572819F6C40061873F /* difficulty_button.atlas */; };
 		FB55435A2819F6CD0061873F /* game_paused.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB5543592819F6CD0061873F /* game_paused.atlas */; };
 		FB55435E2819F6DF0061873F /* mainmenu_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB55435D2819F6DF0061873F /* mainmenu_button.atlas */; };
-		FB5543602819F6EA0061873F /* pause_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB55435F2819F6EA0061873F /* pause_button.atlas */; };
 		FB5543642819F7200061873F /* yunasballad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543632819F7200061873F /* yunasballad.mp3 */; };
 		FB5543662819F7290061873F /* words.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543652819F7290061873F /* words.mp3 */; };
 		FB5543682819F7370061873F /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB5543672819F7370061873F /* gameover.mp3 */; };
@@ -38,6 +37,7 @@
 		FB55438C2819FB300061873F /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55438B2819FB300061873F /* PlayButton.swift */; };
 		FB5543902819FB830061873F /* ReplayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55438F2819FB830061873F /* ReplayButton.swift */; };
 		FB5543922819FBA20061873F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5543912819FBA20061873F /* StartScene.swift */; };
+		FB5D243728F892BD009F97C0 /* pause_button.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB5D243628F892BD009F97C0 /* pause_button.atlas */; };
 		FBD057972819F3E100BC508A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD057962819F3E100BC508A /* AppDelegate.swift */; };
 		FBD057992819F3E100BC508A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBD057982819F3E100BC508A /* GameScene.sks */; };
 		FBD0579B2819F3E100BC508A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBD0579A2819F3E100BC508A /* Actions.sks */; };
@@ -77,7 +77,6 @@
 		FB5543572819F6C40061873F /* difficulty_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = difficulty_button.atlas; sourceTree = "<group>"; };
 		FB5543592819F6CD0061873F /* game_paused.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = game_paused.atlas; sourceTree = "<group>"; };
 		FB55435D2819F6DF0061873F /* mainmenu_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = mainmenu_button.atlas; sourceTree = "<group>"; };
-		FB55435F2819F6EA0061873F /* pause_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pause_button.atlas; sourceTree = "<group>"; };
 		FB5543632819F7200061873F /* yunasballad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yunasballad.mp3; sourceTree = "<group>"; };
 		FB5543652819F7290061873F /* words.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = words.mp3; sourceTree = "<group>"; };
 		FB5543672819F7370061873F /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		FB55438B2819FB300061873F /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		FB55438F2819FB830061873F /* ReplayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayButton.swift; sourceTree = "<group>"; };
 		FB5543912819FBA20061873F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		FB5D243628F892BD009F97C0 /* pause_button.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pause_button.atlas; sourceTree = "<group>"; };
 		FBD057932819F3E100BC508A /* Bubble Burst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bubble Burst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD057962819F3E100BC508A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD057982819F3E100BC508A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -143,6 +143,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB5D243828F892EC009F97C0 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FBD0579C2819F3E100BC508A /* GameScene.swift */,
+				FBD057982819F3E100BC508A /* GameScene.sks */,
+				FB5543832819FA7E0061873F /* KidsModeScene.swift */,
+				FB5543712819F7CC0061873F /* KidsModeScene.sks */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		FB980E8C28F88B14007E27E1 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				FB5543672819F7370061873F /* gameover.mp3 */,
+				FB5543652819F7290061873F /* words.mp3 */,
+				FB5543692819F73F0061873F /* EternityMemoryofLightwaves.mp3 */,
+				FB55436B2819F74B0061873F /* explosion.mp3 */,
+				FB55436D2819F7540061873F /* bubblepop.mp3 */,
+				FB5543632819F7200061873F /* yunasballad.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		FB980E8D28F88B2D007E27E1 /* Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D243628F892BD009F97C0 /* pause_button.atlas */,
+				FB5543592819F6CD0061873F /* game_paused.atlas */,
+				FB55435D2819F6DF0061873F /* mainmenu_button.atlas */,
+				FB5543572819F6C40061873F /* difficulty_button.atlas */,
+				FB55434D2819F51D0061873F /* good_job.atlas */,
+				FB5543552819F6B60061873F /* bubble_burst.atlas */,
+				FBD391BA281A01D30031E5A5 /* replay_button.atlas */,
+				FB173C712819FD7F0060C4C1 /* play_button.atlas */,
+			);
+			path = Atlas;
+			sourceTree = "<group>";
+		};
+		FB980E8F28F88B6D007E27E1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D243828F892EC009F97C0 /* Levels */,
+				FB5543872819FADC0061873F /* MenuScene.swift */,
+				FB5543732819F7FD0061873F /* MenuScene.sks */,
+				FB173C732819FF930060C4C1 /* PauseScene.swift */,
+				FB5543752819F85E0061873F /* PauseScene.sks */,
+				FB5543912819FBA20061873F /* StartScene.swift */,
+				FB5543772819F88C0061873F /* StartScene.sks */,
+				FB55437B2819F9750061873F /* CongratsScene.swift */,
+				FB55436F2819F7960061873F /* CongratsScene.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB980E9028F88D8D007E27E1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB5543792819F93A0061873F /* BubbleAnimation.swift */,
+				FB55437F2819F9DC0061873F /* GamePausedImage.swift */,
+				FB55438B2819FB300061873F /* PlayButton.swift */,
+				FB5543812819FA4F0061873F /* GoodJobImage.swift */,
+				FB55438F2819FB830061873F /* ReplayButton.swift */,
+				FB5543892819FB0C0061873F /* PauseButton.swift */,
+				FB5543852819FAB20061873F /* MainMenuButton.swift */,
+				FB55437D2819F9B20061873F /* DifficultyButton.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		FBD0578A2819F3E100BC508A = {
 			isa = PBXGroup;
 			children = (
@@ -166,46 +236,16 @@
 		FBD057952819F3E100BC508A /* Bubble Burst */ = {
 			isa = PBXGroup;
 			children = (
-				FB173C712819FD7F0060C4C1 /* play_button.atlas */,
-				FB5543632819F7200061873F /* yunasballad.mp3 */,
-				FB5543672819F7370061873F /* gameover.mp3 */,
-				FB5543692819F73F0061873F /* EternityMemoryofLightwaves.mp3 */,
-				FB5543652819F7290061873F /* words.mp3 */,
-				FB55436D2819F7540061873F /* bubblepop.mp3 */,
-				FB55436B2819F74B0061873F /* explosion.mp3 */,
-				FBD391BA281A01D30031E5A5 /* replay_button.atlas */,
-				FB5543552819F6B60061873F /* bubble_burst.atlas */,
-				FB55434D2819F51D0061873F /* good_job.atlas */,
+				FB980E9028F88D8D007E27E1 /* Images */,
+				FB980E8F28F88B6D007E27E1 /* Scenes */,
+				FB980E8D28F88B2D007E27E1 /* Atlas */,
+				FB980E8C28F88B14007E27E1 /* Music */,
 				FBD057962819F3E100BC508A /* AppDelegate.swift */,
-				FBD057982819F3E100BC508A /* GameScene.sks */,
-				FB5543572819F6C40061873F /* difficulty_button.atlas */,
 				FBD0579A2819F3E100BC508A /* Actions.sks */,
-				FBD0579C2819F3E100BC508A /* GameScene.swift */,
-				FB55435F2819F6EA0061873F /* pause_button.atlas */,
-				FB5543592819F6CD0061873F /* game_paused.atlas */,
 				FBD0579E2819F3E100BC508A /* GameViewController.swift */,
 				FBD057A02819F3E100BC508A /* Main.storyboard */,
-				FB55435D2819F6DF0061873F /* mainmenu_button.atlas */,
 				FBD057A32819F3E200BC508A /* Assets.xcassets */,
 				FBD057A52819F3E200BC508A /* LaunchScreen.storyboard */,
-				FB55436F2819F7960061873F /* CongratsScene.sks */,
-				FB5543712819F7CC0061873F /* KidsModeScene.sks */,
-				FB5543732819F7FD0061873F /* MenuScene.sks */,
-				FB5543752819F85E0061873F /* PauseScene.sks */,
-				FB5543772819F88C0061873F /* StartScene.sks */,
-				FB5543792819F93A0061873F /* BubbleAnimation.swift */,
-				FB55437B2819F9750061873F /* CongratsScene.swift */,
-				FB55437D2819F9B20061873F /* DifficultyButton.swift */,
-				FB55437F2819F9DC0061873F /* GamePausedImage.swift */,
-				FB5543812819FA4F0061873F /* GoodJobImage.swift */,
-				FB5543832819FA7E0061873F /* KidsModeScene.swift */,
-				FB5543852819FAB20061873F /* MainMenuButton.swift */,
-				FB5543872819FADC0061873F /* MenuScene.swift */,
-				FB5543892819FB0C0061873F /* PauseButton.swift */,
-				FB55438B2819FB300061873F /* PlayButton.swift */,
-				FB55438F2819FB830061873F /* ReplayButton.swift */,
-				FB5543912819FBA20061873F /* StartScene.swift */,
-				FB173C732819FF930060C4C1 /* PauseScene.swift */,
 			);
 			path = "Bubble Burst";
 			sourceTree = "<group>";
@@ -335,7 +375,6 @@
 				FB5543762819F85E0061873F /* PauseScene.sks in Resources */,
 				FB55435A2819F6CD0061873F /* game_paused.atlas in Resources */,
 				FB5543562819F6B60061873F /* bubble_burst.atlas in Resources */,
-				FB5543602819F6EA0061873F /* pause_button.atlas in Resources */,
 				FBD057A22819F3E100BC508A /* Main.storyboard in Resources */,
 				FBD057992819F3E100BC508A /* GameScene.sks in Resources */,
 				FB5543722819F7CC0061873F /* KidsModeScene.sks in Resources */,
@@ -354,6 +393,7 @@
 				FB5543642819F7200061873F /* yunasballad.mp3 in Resources */,
 				FBD057A72819F3E200BC508A /* LaunchScreen.storyboard in Resources */,
 				FB5543702819F7960061873F /* CongratsScene.sks in Resources */,
+				FB5D243728F892BD009F97C0 /* pause_button.atlas in Resources */,
 				FBD0579B2819F3E100BC508A /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

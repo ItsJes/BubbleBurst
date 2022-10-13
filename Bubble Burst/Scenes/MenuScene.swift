@@ -11,16 +11,14 @@ import GameplayKit
 
 class MenuScene: SKScene,  SKPhysicsContactDelegate {
     
-    var label : SKLabelNode!
-    private var spinnyNode : SKShapeNode!
-    var currentScore: SKLabelNode!
-    var difficultyLabel : SKLabelNode!
-    var difficultyMode : SKLabelNode!
+    var label: SKLabelNode!
+    private var spinnyNode: SKShapeNode!
+    var difficultyLabel: SKLabelNode!
+    var difficultyMode: SKLabelNode!
    // private var bubbleHS : SKSpriteNode!
     var mainMenuMusic: SKAudioNode!
     var bubbleAnimation = BubbleAnimation()
     let playButton = PlayButton()
-    var newScore = 0
     let difficultyButton = DifficultyButton()
     var newDifficulty: String!
     
@@ -81,14 +79,6 @@ class MenuScene: SKScene,  SKPhysicsContactDelegate {
         showDifficultyLabel()
         showDifficultyMode()
         
-    }
-
-
-    private func startGame()
-    {
-        print("start game")
-                
-        currentScore.run(SKAction.fadeIn(withDuration: 1.0))
     }
     
     @objc func showPButton() {
@@ -189,10 +179,8 @@ class MenuScene: SKScene,  SKPhysicsContactDelegate {
         for t in touches { self.touchDown(atPoint: t.location(in: self))
             let location = t.location(in: self)
             let touchedNode = self.nodes(at: location)
-            for node in touchedNode
-            {
-                if node.name == "play_button" && difficultyMode.text == "Normal"
-                {
+            for node in touchedNode{
+                if node.name == "play_button" && difficultyMode.text == "Normal"{
                     mainMenuMusic.removeFromParent()
                     let transition = SKTransition.flipHorizontal(withDuration: 0.5)
                     let scene = SKScene(fileNamed: "GameScene") as! GameScene

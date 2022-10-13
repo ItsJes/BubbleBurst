@@ -11,9 +11,9 @@ import GameplayKit
 
 class GameScene: SKScene,  SKPhysicsContactDelegate {
     
-    var label : SKLabelNode!
+   // var label : SKLabelNode!
     private var spinnyNode : SKShapeNode!
-    var difficultyMode : SKLabelNode!
+    var difficultyMode : SKLabelNode?
     var scoreLabel: SKLabelNode!
     var timeLabel: SKLabelNode!
     var bombCountLabel: SKLabelNode!
@@ -29,7 +29,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
     var timerLabelUpdate: Timer! = nil
     var newDifficulty: String!
     var bubbles = ["pink_bubble", "rainbow_bubble", "soap_bubble"]
-    var bomb = ["purple_bomb"]
+    var bomb = "purple_bomb"
     var newScore: Int = 0 {
         didSet {
             scoreLabel.text = "Score: \(newScore)"
@@ -49,8 +49,6 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
     }
 
     
-   // var game: GameManager!
-    
     override func didMove(to view: SKView) {
 
         initializeGameView()
@@ -69,13 +67,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
     }
     
     @objc func updateTime(){
-        /*
-        let transition = SKTransition.flipHorizontal(withDuration: 0.5)
-        let scoreScene = SKScene(fileNamed: "ScoreScene") as! ScoreScene
-        scoreScene.scaleMode = .aspectFill
-        scoreScene.score = self.newScore
-        self.view?.presentScene(scoreScene, transition: transition)
- */
+
         let transition = SKTransition.flipHorizontal(withDuration: 0.5)
         let congratsScene = SKScene(fileNamed: "CongratsScene") as! CongratsScene
         congratsScene.scaleMode = .aspectFill
@@ -124,6 +116,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
         self.addChild(pauseButton)
         
     }
+    
     func getTimeLabel(){
         bubbleTimer = Timer.scheduledTimer(timeInterval: 1, target: self,selector: #selector(updateTimeLabel), userInfo: nil, repeats: true)
     }
@@ -188,7 +181,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
         let randomNumber = Int.random(in: 75..<150)
         let randomDuration = Int.random(in: 6..<10)
       //  let randomDurationUp = Int.random(in: 6..<10)
-        bombs = SKSpriteNode(imageNamed: bomb[0])
+        bombs = SKSpriteNode(imageNamed: bomb)
         bombs.name = "bomb_name"
         bombs.size = CGSize(width: randomNumber, height: randomNumber)
         let randomBubble = GKRandomDistribution(lowestValue: -Int(self.frame.size.width) / 3, highestValue: Int(self.frame.size.width) / 3)
@@ -217,8 +210,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
         
     }
     
-    private func startGame()
-    {
+    private func startGame(){
         scoreLabel.run(SKAction.fadeIn(withDuration: 1.0))
     }
     
@@ -226,15 +218,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
     func touchDown(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
-    }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
+            //n.strokeColor = SKColor.green
             self.addChild(n)
         }
     }
@@ -242,7 +226,7 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
     func touchUp(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
-            n.strokeColor = SKColor.red
+            //n.strokeColor = SKColor.red
             self.addChild(n)
         }
     }
@@ -291,11 +275,6 @@ class GameScene: SKScene,  SKPhysicsContactDelegate {
         }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self))
-        }
-        
-    }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
